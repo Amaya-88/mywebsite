@@ -1,0 +1,16 @@
+@import ../base/colors
+#tagpull
+  display: none
+  @media only screen and (max-width : 480px), only screen and (max-height : 480px)
+    z-index: 100
+    display: block  
+    background-color: $tagpull-color
+    color: $tagpull-font-color
+    width: 57px 
+    position: relative 
+    padding: 5px
+    &:after 
+      content: ""
+      background: url('../../../images/bullet.gif') no-repeat
+      width: 30px  
+      height: 30px

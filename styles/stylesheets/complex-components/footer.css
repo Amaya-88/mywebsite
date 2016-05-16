@@ -1,0 +1,30 @@
+/* line 2, ../../sass/complex-components/footer.sass */
+#footer {
+  font-size: 10px;
+  text-align: left;
+  position: fixed;
+  font-size: 9px;
+  height: 30px;
+  bottom: 0;
+  width: 100%;
+}
+/* line 10, ../../sass/complex-components/footer.sass */
+#footer .footer_box {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  height: 30px;
+  background: #affdcc;
+}
+/* line 16, ../../sass/complex-components/footer.sass */
+#footer .footer_box div {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  height: 30px;
+  background: #a6f0b7;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  font-size: 2em;
+}

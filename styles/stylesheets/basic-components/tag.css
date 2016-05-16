@@ -1,0 +1,19 @@
+/* line 2, ../../sass/basic-components/tag.sass */
+.tec {
+  margin-right: 3px;
+  text-decoration: none;
+  background-color: #dce0dd;
+  cursor: pointer;
+  padding: 0.2em;
+  white-space: nowrap;
+  color: #6d52ab;
+}
+/* line 10, ../../sass/basic-components/tag.sass */
+.tec:hover {
+  outline: 1px solid #656765;
+}
+/* line 12, ../../sass/basic-components/tag.sass */
+.tec.activ {
+  background-color: #6d52ab;
+  color: #dce0dd;
+}

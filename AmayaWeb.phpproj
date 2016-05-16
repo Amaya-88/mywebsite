@@ -1,0 +1,136 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>AmayaWeb</Name>
+    <ProjectGuid>{df1a51a8-3b0a-487b-b8bf-b1d0553f1cd2}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="data\db\.htaccess" />
+    <Compile Include="data\db\dbinfo.php" />
+    <Compile Include="data\db\EventRepository.php" />
+    <Compile Include="data\db\ProjectRepository.php" />
+    <Compile Include="data\pdf\Arbeitszeugnis codegarden.pdf" />
+    <Compile Include="data\pdf\Arbeitszeugnis getappdev.com.pdf" />
+    <Compile Include="data\pdf\Arbeitszeugnis grintsch.pdf" />
+    <Compile Include="data\pdf\Lebenslauf.pdf" />
+    <Compile Include="data\pdf\Projektliste.pdf" />
+    <Compile Include="data\project_sources\amayaweb.zip" />
+    <Compile Include="data\project_sources\FutureCostum.zip" />
+    <Compile Include="data\project_sources\HobbyHorse.zip" />
+    <Compile Include="data\translationamayaweb.csv" />
+    <Compile Include="images\amaya.png" />
+    <Compile Include="images\download.gif" />
+    <Compile Include="images\download.png" />
+    <Compile Include="images\flagsprite.png" />
+    <Compile Include="images\flagsprite40.png" />
+    <Compile Include="lib\js\timeline\linie.png" />
+    <Compile Include="lib\js\timeline\timeline.html" />
+    <Compile Include="lib\js\timeline\timeline_amaya.css" />
+    <Compile Include="lib\js\timeline\timeline_amaya.js" />
+    <Compile Include="lib\js\jquery.jqote2.min.js" />
+    <Compile Include="lib\js\jquery.js" />
+    <Compile Include="lib\js\plugins.js" />
+    <Compile Include="scripts\project.js" />
+    <Compile Include="scripts\scripts.js" />
+    <Compile Include="service\amayaweb_service.php" />
+    <Compile Include="styles\css\layout.css" />
+    <Compile Include="styles\sass\base\basic.sass" />
+    <Compile Include="styles\sass\base\colors.sass" />
+    <Compile Include="styles\sass\base\vars-default.sass" />
+    <Compile Include="styles\sass\basic-components\download-button.sass" />
+    <Compile Include="styles\sass\basic-components\flag.sass" />
+    <Compile Include="styles\sass\basic-components\imagebox.sass" />
+    <Compile Include="styles\sass\basic-components\menu-button.sass" />
+    <Compile Include="styles\sass\basic-components\project.sass" />
+    <Compile Include="styles\sass\basic-components\tag.sass" />
+    <Compile Include="styles\sass\basic-components\tagallbutton.sass" />
+    <Compile Include="styles\sass\basic-components\tagpull.sass" />
+    <Compile Include="styles\sass\complex-components\centerbox.sass" />
+    <Compile Include="styles\sass\complex-components\content.sass" />
+    <Compile Include="styles\sass\complex-components\filter.sass" />
+    <Compile Include="styles\sass\complex-components\footer.sass" />
+    <Compile Include="styles\sass\complex-components\header.sass" />
+    <Compile Include="styles\sass\complex-components\mainbox.sass" />
+    <Compile Include="styles\sass\complex-components\menu.sass" />
+    <Compile Include="styles\sass\complex-components\tagsbox.sass" />
+    <Compile Include="styles\sass\ie.scss" />
+    <Compile Include="styles\sass\layout.sass" />
+    <Compile Include="styles\sass\print.scss" />
+    <Compile Include="styles\sass\screen.scss" />
+    <Compile Include="styles\stylesheets\base\basic.css" />
+    <Compile Include="styles\stylesheets\base\colors.css" />
+    <Compile Include="styles\stylesheets\base\vars-default.css" />
+    <Compile Include="styles\stylesheets\basic-components\download-button.css" />
+    <Compile Include="styles\stylesheets\basic-components\flag.css" />
+    <Compile Include="styles\stylesheets\basic-components\imagebox.css" />
+    <Compile Include="styles\stylesheets\basic-components\menu-button.css" />
+    <Compile Include="styles\stylesheets\basic-components\project.css" />
+    <Compile Include="styles\stylesheets\basic-components\tag.css" />
+    <Compile Include="styles\stylesheets\basic-components\tagallbutton.css" />
+    <Compile Include="styles\stylesheets\basic-components\tagpull.css" />
+    <Compile Include="styles\stylesheets\complex-components\centerbox.css" />
+    <Compile Include="styles\stylesheets\complex-components\content.css" />
+    <Compile Include="styles\stylesheets\complex-components\filter.css" />
+    <Compile Include="styles\stylesheets\complex-components\footer.css" />
+    <Compile Include="styles\stylesheets\complex-components\header.css" />
+    <Compile Include="styles\stylesheets\complex-components\mainbox.css" />
+    <Compile Include="styles\stylesheets\complex-components\menu.css" />
+    <Compile Include="styles\stylesheets\complex-components\tagsbox.css" />
+    <Compile Include="styles\stylesheets\ie.css" />
+    <Compile Include="styles\stylesheets\layout.css" />
+    <Compile Include="styles\stylesheets\print.css" />
+    <Compile Include="styles\stylesheets\screen.css" />
+    <Compile Include="styles\config.rb" />
+    <Compile Include="ui\components\footer.php" />
+    <Compile Include="ui\components\header.php" />
+    <Compile Include="util\csvtodict.php" />
+    <Compile Include="util\translation.php" />
+    <Compile Include="util\urltools.php" />
+    <Compile Include="blog.php" />
+    <Compile Include="contact.php" />
+    <Compile Include="curriculum.php" />
+    <Compile Include="impressum.php" />
+    <Compile Include="index.php" />
+    <Compile Include="map.php" />
+    <Compile Include="metatags.php" />
+    <Compile Include="projects.php" />
+    <Compile Include="robots.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="cgi-bin" />
+    <Folder Include="data\db" />
+    <Folder Include="data\pdf" />
+    <Folder Include="data\project_sources" />
+    <Folder Include="data" />
+    <Folder Include="images" />
+    <Folder Include="lib\js\timeline" />
+    <Folder Include="lib\js" />
+    <Folder Include="lib" />
+    <Folder Include="scripts" />
+    <Folder Include="service" />
+    <Folder Include="styles\css" />
+    <Folder Include="styles\sass\base" />
+    <Folder Include="styles\sass\basic-components" />
+    <Folder Include="styles\sass\complex-components" />
+    <Folder Include="styles\sass\page" />
+    <Folder Include="styles\sass" />
+    <Folder Include="styles\stylesheets\base" />
+    <Folder Include="styles\stylesheets\basic-components" />
+    <Folder Include="styles\stylesheets\complex-components" />
+    <Folder Include="styles\stylesheets" />
+    <Folder Include="styles" />
+    <Folder Include="ui\components" />
+    <Folder Include="ui" />
+    <Folder Include="util" />
+  </ItemGroup>
+</Project>

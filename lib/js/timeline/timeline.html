@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"> 
+<link rel="stylesheet" type="text/css" href="timeline_amaya.css">
+  <title>timeline</title>
+  
+</head>
+<body>
+	<div class="timeline_amaya">
+      	
+		<!--div class="cat active">
+			<span class="cat_title">estudios</span>
+			<div class="event">
+				<div class="event_periode">
+					<span class="date_initial">2006</span>
+					<span class="date_final">2012</span>
+				</div>
+				<div class="event_description">
+					<h1 class="title">ITIG Universidad de burgos</h1>
+					<p class="description"> larola lareirlo lololo lilila</p>
+				</div>
+			</div>
+			<div class="event">
+				<div class="event_periode">
+					<span class="date_initial">2014</span>
+					<span class="date_final">actual</span>
+				</div>
+				<div class="event_description">
+					<h1 class="title">Hagen</h1>
+					<p class="description"> larola lareirlo lololo lilila</p>
+				</div>
+			</div>
+		</div>
+		<div class="cat">
+			<span class="cat_title">trabajo</span>
+			<div class="event">
+				<div class="event_periode">
+					<span class="date_initial">2010</span>
+					<span class="date_final">2010</span>
+				</div>
+				<div class="event_description">
+					<h1 class="title">Codegarden</h1>
+					<p class="description"> larola lareirlo lololo lilila</p>
+				</div>
+			</div>
+			<div class="event">
+				<div class="event_periode">
+					<span class="date_initial">2012</span>
+					<span class="date_final">2014</span>
+				</div>
+				<div class="event_description">
+					<h1 class="title">Grintsch</h1>
+					<p class="description"> larola lareirlo lololo lilila</p>
+				</div>
+			</div>
+		</div-->
+	</div>
+	
+	<script type="text/x-jqote-template" id="event_tmpl">
+      		<div class="cat">
+				<span class="cat_title"> <%= this.name %></span>
+				  <% for(d=0;d<this.events.length;d++) { %>
+				  	<div class="event">
+						<div class="event_periode">
+							<span class="date_initial"><%= this.events[d].event_date_in %></span>
+							<span class="date_final"><%= this.events[d].event_date_fi %></span>
+						</div>
+						<div class="event_description">
+							<h1 class="title"><%= this.events[d].event_name %></h1>
+							<p class="description"><%= this.events[d].event_description %></p>
+						</div>
+					</div>
+				  <% } %>
+			</div>
+		</script>
+		
+	<script type="text/javascript" src="../jquery.js"></script>
+	<script type="text/javascript" src="../jquery.jqote2.min.js"></script>
+
+	<script type="text/javascript" src="timeline_amaya.js"></script>
+	<script type="text/javascript">
+		var timeline = $('div.timeline_amaya').data("timeline_amaya");
+
+		jQuery.ajax({
+		    type: "GET",
+		    url: '../../../service/amayaweb_service.php',
+		    data: {functionname: "getAllEvents"},//, language:language, tag:tag},
+		    dataType: "json",
+		    success: function (obj, textstatus) {
+	          if( !(obj.error) ) {	          	
+	          	var a = new Object();
+	          	$.each(obj.result,function(index, val){   	
+	          		var cat = val.category_name.split('_')[0];
+	          		if(a[cat]== null){ 
+	          			a[cat] = new Object();
+	          			a[cat].events = new Array();
+	          			a[cat].name = cat;
+	          		}
+	          		a[cat].events.push(val);
+	          	});
+          		for (var key in a) {
+				   var text= $('#event_tmpl').jqote(a[key]);
+				   $('.timeline_amaya').append(text);
+				}
+				 $('.timeline_amaya').timeline_amaya();
+	          }
+	          else {
+	              console.log(obj.error);
+	          }
+		    },
+		    fail: function() {
+				alert( "error" );
+			}
+		});
+	</script>
+</body>
+</html>

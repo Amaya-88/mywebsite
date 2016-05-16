@@ -1,0 +1,29 @@
+/* line 3, ../../sass/complex-components/content.sass */
+#content {
+  height: 100%;
+  margin-top: 2em;
+}
+@media screen and (max-width: 600px) {
+  /* line 3, ../../sass/complex-components/content.sass */
+  #content {
+    margin-top: 2em;
+  }
+}
+@media only screen and (max-width: 480px), only screen and (max-height: 480px) {
+  /* line 3, ../../sass/complex-components/content.sass */
+  #content {
+    margin-top: 0em;
+  }
+}
+/* line 10, ../../sass/complex-components/content.sass */
+#content p {
+  text-align: left;
+}
+/* line 12, ../../sass/complex-components/content.sass */
+#content h1 {
+  color: #6d52ab;
+}
+/* line 14, ../../sass/complex-components/content.sass */
+#content h2 {
+  color: #6d52ab;
+}

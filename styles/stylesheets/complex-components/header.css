@@ -1,0 +1,16 @@
+/* line 2, ../../sass/complex-components/header.sass */
+#header {
+  font-size: 1em;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #dce0dd;
+  text-align: left;
+  position: fixed;
+  top: 0;
+}
+/* line 11, ../../sass/complex-components/header.sass */
+#header ul {
+  list-style-type: none;
+  margin: 0 auto;
+}

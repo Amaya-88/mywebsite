@@ -1,0 +1,36 @@
+/* line 3, ../../sass/basic-components/flag.sass */
+.flag {
+  display: block;
+  float: right;
+  margin-left: 3px;
+  margin-top: 0px;
+}
+/* line 8, ../../sass/basic-components/flag.sass */
+.flag:hover {
+  outline: 1px solid #656765;
+}
+/* line 10, ../../sass/basic-components/flag.sass */
+.flag.activ {
+  outline: 1px solid #656765;
+}
+
+/* line 13, ../../sass/basic-components/flag.sass */
+.en {
+  width: 39px;
+  height: 25px;
+  background: url(../../images/flagsprite40.png) 0 0;
+}
+
+/* line 17, ../../sass/basic-components/flag.sass */
+.de {
+  width: 39px;
+  height: 25px;
+  background: url(../../images/flagsprite40.png) 0 -25px;
+}
+
+/* line 21, ../../sass/basic-components/flag.sass */
+.es {
+  width: 39px;
+  height: 25px;
+  background: url(../../images/flagsprite40.png) 0 -50px;
+}

@@ -1,0 +1,29 @@
+/* line 3, ../../sass/complex-components/mainbox.sass */
+.main {
+  min-height: 30em;
+  background-color: #d3affd;
+  font-size: 1em;
+  margin: 0px;
+  max-width: 55em;
+  height: auto;
+  clear: both;
+  text-align: left;
+  line-height: 22pt;
+  padding-top: 2em;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 4em;
+}
+@media screen and (max-width: 600px) {
+  /* line 3, ../../sass/complex-components/mainbox.sass */
+  .main {
+    padding-top: 6em;
+  }
+}
+@media only screen and (max-width: 480px), only screen and (max-height: 480px) {
+  /* line 3, ../../sass/complex-components/mainbox.sass */
+  .main {
+    padding-top: 4em;
+    width: auto;
+  }
+}

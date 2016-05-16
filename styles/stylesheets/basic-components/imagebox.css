@@ -1,0 +1,16 @@
+/* line 2, ../../sass/basic-components/imagebox.sass */
+#seitenbox {
+  margin-top: 0.7em;
+  float: right;
+}
+@media only screen and (max-width: 480px), only screen and (max-height: 480px) {
+  /* line 2, ../../sass/basic-components/imagebox.sass */
+  #seitenbox {
+    float: none;
+  }
+}
+
+/* line 8, ../../sass/basic-components/imagebox.sass */
+#seitenbox img {
+  border: 3px solid #656765;
+}

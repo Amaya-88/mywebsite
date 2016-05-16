@@ -1,0 +1,9 @@
+/* line 2, ../../sass/basic-components/tagallbutton.sass */
+#tagall {
+  width: 15%;
+  height: 25px;
+  background-color: #affdcc;
+  text-align: center;
+  margin-top: 10px;
+  display: none;
+}

@@ -1,0 +1,42 @@
+/* line 3, ../../sass/base/basic.sass */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 7, ../../sass/base/basic.sass */
+html {
+  height: 100%;
+}
+
+/* line 10, ../../sass/base/basic.sass */
+body {
+  height: 100%;
+  background-color: #f7f6fd;
+  text-align: center;
+}
+
+/* line 15, ../../sass/base/basic.sass */
+a {
+  text-decoration: none;
+}
+/* line 17, ../../sass/base/basic.sass */
+a:link {
+  color: #6d52ab;
+}
+
+/* line 20, ../../sass/base/basic.sass */
+div {
+  font-size: 1em;
+}
+
+/* line 22, ../../sass/base/basic.sass */
+h1 {
+  margin-bottom: 1em;
+  margin-top: 0.7em;
+}
+
+/* line 26, ../../sass/base/basic.sass */
+p {
+  margin: 0.5em 0em;
+}

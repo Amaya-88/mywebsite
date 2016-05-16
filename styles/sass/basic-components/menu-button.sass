@@ -1,0 +1,56 @@
+@import ../base/colors
+@import ../base/vars-default
+
+.menu a
+  display: block
+  height: 1.9em
+  padding-top: $padding-button-default
+  @media screen and (max-width: 600px)
+    text-indent: 25px
+  
+.menu li a
+  float: left
+  width: 100px
+  text-align: center
+  border-right: $border-s-default solid $lila
+  box-sizing: border-box
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  @media screen and (max-width: 600px)
+    border-bottom: 1px solid $border-color
+    border-right: 1px solid $border-color
+    text-align: left
+    width: 100%
+    text-indent: 25px
+  & dfn
+    display: none
+  &:hover
+    background-color: $menu-activ-color
+    
+a.pull
+  display: none
+  text-align: left
+  text-indent: 25px
+  z-index: 1000
+  background-color: $menu-pull-color
+  color: $grey
+  width: 100%
+  position: relative
+  @media only screen and (max-width : 480px), only screen and (max-height : 480px) 
+    display: block  
+
+    &:after 
+      content: ""
+      background: url('images/bullet.gif') no-repeat 
+      width: 30px
+      height: 30px  
+      display: inline-block
+      position: absolute
+      right: 15px
+      top: 10px 
+
+.menu li:last-child a
+  border-right: 0
+ 
+.menu li.menuFirst a
+  background-color: $menu-activ-color

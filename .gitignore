@@ -243,3 +243,7 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+
+#Data
+data/db/dbinfo.php
+data/db/.htaccess

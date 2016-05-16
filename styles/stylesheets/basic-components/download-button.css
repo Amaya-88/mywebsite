@@ -1,0 +1,14 @@
+/* line 4, ../../sass/basic-components/download-button.sass */
+.download_link {
+  background: url(../../images/download.png) right 0px no-repeat, #affdcc;
+  text-decoration: none;
+  padding-top: 0.4em;
+  padding-left: 0.4em;
+  padding-bottom: 0.4em;
+  padding-right: 35px;
+  cursor: pointer;
+}
+/* line 12, ../../sass/basic-components/download-button.sass */
+.download_link:hover {
+  outline: 1px solid #656765;
+}

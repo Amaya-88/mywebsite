@@ -1,0 +1,72 @@
+
+
+.cat {
+	width:100px;
+	background-image:url('linie.png');
+	background-repeat: repeat-y;
+	background-position:center; 
+	float: left;
+	margin-left: 20px;
+	color: #576979;
+	font-size: 8px;
+}
+
+.active.cat {
+	width: 500px;
+	color: black;
+	font-size: 18px;
+}
+
+.cat h1 {
+	font-size: 10px;
+}
+.active.cat h1 {
+	font-size: 18px;
+}
+
+.cat_title {
+	font-size: 22px;
+	text-align: center;
+	width: 100px;
+	display: block;
+	margin-bottom: 22px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	background-color: #dce0dd;
+	color: #6d52ab;
+}
+
+.active .cat_title {
+	width: 500px;
+    text-align: center;
+    background-color: #6d52ab;
+	color: #dce0dd;
+}
+
+div.event {	
+	height:200px;
+	background-color: #DCE0DD; 
+	margin-bottom:20px;
+} 
+.active div.event {	
+	background-color: #e162f8; 
+} 
+.event_description {
+	padding-top: 10px;
+}
+.event_periode {
+	float:left;
+	height:100%;
+	width:20%;
+	position: relative;
+}
+.date_initial {
+	position:absolute;
+	top:5px;
+	left:5px;
+}
+.date_final {
+	position:absolute;
+	bottom:5px;
+	left:5px;
+}

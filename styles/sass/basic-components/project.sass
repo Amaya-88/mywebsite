@@ -1,0 +1,11 @@
+@import ../base/colors
+.project
+  margin-top: 1em
+  padding: 1em
+  border-color: $border-color
+  border-style: dotted
+  @media only screen and (max-width : 480px), only screen and (max-height : 480px)
+    padding: 0.5em
+  & .chapter 
+    color: $title-color
+    font-size: 1.1em
