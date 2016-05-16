@@ -1,3 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -132,5 +133,15 @@
     <Folder Include="ui\components" />
     <Folder Include="ui" />
     <Folder Include="util" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="compilerconfig.json" />
+    <Content Include="compilerconfig.json.defaults">
+      <SubType>Content</SubType>
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </Content>
+    <Content Include="images\menu.png" />
+    <Content Include="images\site_icon.png" />
+    <Content Include="styles\stylesheets\layout.min.css" />
   </ItemGroup>
 </Project>

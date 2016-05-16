@@ -10,7 +10,7 @@
 <html>
   <head>
     <?php include "metatags.php" ?>
-    
+    <link rel="icon" href="/images/site_icon.png" />
     <link rel="stylesheet" type="text/css" href="styles/stylesheets/layout.css">
 
     <title>Curriculum - Amaya Pascual Cajal</title>

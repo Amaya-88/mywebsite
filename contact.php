@@ -10,6 +10,7 @@
 <html>
   <head>
 	<?php include "metatags.php" ?>
+    <link rel="icon" href="/images/site_icon.png" />
     <link rel="stylesheet" type="text/css" href="styles/stylesheets/layout.css">
     <title><?php echo curPageName(); ?> - Amaya Pascual Cajal</title>
   </head>
