@@ -3,8 +3,8 @@
 
 function addFlag($language) {
 	$current_language = "en";
-	if(isset($_GET['l']))
-		$current_language = $_GET['l'];
+	if(isset($_POST['l']))
+		$current_language = $_POST['l'];
 	$currentURL = currentURL();
 
 	$extraclass = '';

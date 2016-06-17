@@ -6,8 +6,8 @@
 	{
 		
 		$current_language = "en";
-		if(isset($_GET['l']))
-			$current_language = $_GET['l'];
+		if(isset($_POST['l']))
+			$current_language = $_POST['l'];
 
 	   $header_class =  curPageName()==$url?'class="menuFirst"':'';
 	

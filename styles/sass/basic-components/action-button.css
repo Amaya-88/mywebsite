@@ -1,0 +1,9 @@
+﻿.button {
+  margin-right: 3px;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.2em;
+  white-space: nowrap; }
+  .button:hover {
+    outline: 1px solid #656765; }
+

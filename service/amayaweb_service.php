@@ -1,6 +1,6 @@
-<?php  
- 	include( '../data/db/ProjectRepository.php' ); 
-	include( '../data/db/EventRepository.php' ); 
+<?php
+ 	include( '../data/db/ProjectRepository.php' );
+	include( '../data/db/EventRepository.php' );
 	switch ($_GET["functionname"]) {
 		case 'getAllTags':
 			$obj = new ProjectRepository();
@@ -17,5 +17,10 @@
 		default:
 			break;
 	}
+
+    switch ($_POST["functionname"]) {
+        default:
+			break;
+    }
 
 ?>

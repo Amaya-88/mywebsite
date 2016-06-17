@@ -14,7 +14,7 @@ class ProjectRepository {
 		 global $dbuser;
 		 global $dbpass;
 		 global $dbname;
-		 
+
 
 		$link = mysql_connect($dbhost, $dbuser, $dbpass)
 		    or die('The connection fails: ' . mysql_error());
@@ -28,7 +28,6 @@ class ProjectRepository {
 			$tags["result"][]=$row;
 		}
 		//$tags = mysql_fetch_array($result, MYSQL_ASSOC);
-
 		mysql_free_result($result);
 		mysql_close($link);
 		return $tags;
@@ -40,7 +39,7 @@ class ProjectRepository {
 		global $dbuser;
 		global $dbpass;
 		global $dbname;
-		
+
 		$link = mysql_connect($dbhost, $dbuser, $dbpass)
 	    or die('The connection fails: ' . mysql_error());
 		

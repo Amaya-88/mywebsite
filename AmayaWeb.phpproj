@@ -16,6 +16,7 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="chat\index.php" />
     <Compile Include="data\db\.htaccess" />
     <Compile Include="data\db\dbinfo.php" />
     <Compile Include="data\db\EventRepository.php" />
@@ -37,13 +38,15 @@
     <Compile Include="lib\js\timeline\linie.png" />
     <Compile Include="lib\js\timeline\timeline.html" />
     <Compile Include="lib\js\timeline\timeline_amaya.css" />
-    <Compile Include="lib\js\timeline\timeline_amaya.js" />
+    <Compile Include="lib\js\timeline_amaya.js" />
     <Compile Include="lib\js\jquery.jqote2.min.js" />
     <Compile Include="lib\js\jquery.js" />
     <Compile Include="lib\js\plugins.js" />
     <Compile Include="scripts\project.js" />
     <Compile Include="scripts\scripts.js" />
     <Compile Include="service\amayaweb_service.php" />
+    <Compile Include="service\chat_service.php" />
+    <Compile Include="service\test_service.php" />
     <Compile Include="styles\css\layout.css" />
     <Compile Include="styles\sass\base\basic.sass" />
     <Compile Include="styles\sass\base\colors.sass" />
@@ -64,10 +67,7 @@
     <Compile Include="styles\sass\complex-components\mainbox.sass" />
     <Compile Include="styles\sass\complex-components\menu.sass" />
     <Compile Include="styles\sass\complex-components\tagsbox.sass" />
-    <Compile Include="styles\sass\ie.scss" />
     <Compile Include="styles\sass\layout.sass" />
-    <Compile Include="styles\sass\print.scss" />
-    <Compile Include="styles\sass\screen.scss" />
     <Compile Include="styles\stylesheets\base\basic.css" />
     <Compile Include="styles\stylesheets\base\colors.css" />
     <Compile Include="styles\stylesheets\base\vars-default.css" />
@@ -113,11 +113,14 @@
     <Folder Include="data\pdf" />
     <Folder Include="data\project_sources" />
     <Folder Include="data" />
-    <Folder Include="images" />
+    <Folder Include="images\" />
     <Folder Include="lib\js\timeline" />
     <Folder Include="lib\js" />
     <Folder Include="lib" />
+    <Folder Include="chat\" />
     <Folder Include="scripts" />
+    <Folder Include="scripts\modules\" />
+    <Folder Include="scripts\modules\chat\" />
     <Folder Include="service" />
     <Folder Include="styles\css" />
     <Folder Include="styles\sass\base" />
@@ -135,6 +138,7 @@
     <Folder Include="util" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="chat\log.json" />
     <Content Include="compilerconfig.json" />
     <Content Include="compilerconfig.json.defaults">
       <SubType>Content</SubType>
@@ -142,6 +146,13 @@
     </Content>
     <Content Include="images\menu.png" />
     <Content Include="images\site_icon.png" />
+    <Content Include="scripts\modules\chat\chat.js" />
+    <Content Include="styles\sass\basic-components\action-button.css">
+      <SubType>Content</SubType>
+      <DependentUpon>styles\sass\basic-components\action-button.sass</DependentUpon>
+    </Content>
+    <Content Include="styles\sass\basic-components\action-button.sass" />
+    <Content Include="styles\sass\complex-components\chat.sass" />
     <Content Include="styles\stylesheets\layout.min.css" />
   </ItemGroup>
 </Project>

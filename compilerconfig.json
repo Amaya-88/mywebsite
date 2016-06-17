@@ -2,5 +2,9 @@
   {
     "outputFile": "styles/stylesheets/layout.css",
     "inputFile": "styles/sass/layout.sass"
+  },
+  {
+    "outputFile": "styles/sass/basic-components/action-button.css",
+    "inputFile": "styles/sass/basic-components/action-button.sass"
   }
 ]
