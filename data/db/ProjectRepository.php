@@ -61,7 +61,7 @@ class ProjectRepository {
 
 		$result = mysql_query($query) or die("query fails: " . mysql_error());
 		
-		$translation = new Translation($language,"../data/translationamayaweb.csv");
+		$translation = new Translation("../data/translationamayaweb.csv");
 		
 		while($r = mysql_fetch_array($result, MYSQL_ASSOC)) {
 			$r["name"] = $translation->{'getTranslation'}($r["name"]);

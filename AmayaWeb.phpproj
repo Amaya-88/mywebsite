@@ -26,7 +26,6 @@
     <Compile Include="data\pdf\Arbeitszeugnis grintsch.pdf" />
     <Compile Include="data\pdf\Lebenslauf.pdf" />
     <Compile Include="data\pdf\Projektliste.pdf" />
-    <Compile Include="data\project_sources\amayaweb.zip" />
     <Compile Include="data\project_sources\FutureCostum.zip" />
     <Compile Include="data\project_sources\HobbyHorse.zip" />
     <Compile Include="data\translationamayaweb.csv" />
@@ -42,7 +41,7 @@
     <Compile Include="lib\js\jquery.jqote2.min.js" />
     <Compile Include="lib\js\jquery.js" />
     <Compile Include="lib\js\plugins.js" />
-    <Compile Include="scripts\project.js" />
+    <Compile Include="scripts\project\model\project.js" />
     <Compile Include="scripts\scripts.js" />
     <Compile Include="service\amayaweb_service.php" />
     <Compile Include="service\chat_service.php" />
@@ -123,6 +122,10 @@
     <Folder Include="scripts" />
     <Folder Include="scripts\modules\" />
     <Folder Include="scripts\modules\chat\" />
+    <Folder Include="scripts\project\" />
+    <Folder Include="scripts\project\model\" />
+    <Folder Include="scripts\project\controller\" />
+    <Folder Include="scripts\project\view\" />
     <Folder Include="service" />
     <Folder Include="styles\css" />
     <Folder Include="styles\sass\base" />
@@ -149,6 +152,8 @@
     <Content Include="images\menu.png" />
     <Content Include="images\site_icon.png" />
     <Content Include="scripts\modules\chat\chat.js" />
+    <Content Include="scripts\project\controller\project.js" />
+    <Content Include="scripts\project\view\project.js" />
     <Content Include="styles\sass\basic-components\action-button.css">
       <SubType>Content</SubType>
       <DependentUpon>styles\sass\basic-components\action-button.sass</DependentUpon>

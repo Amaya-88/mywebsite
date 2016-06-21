@@ -26,7 +26,7 @@
         	<?php echo 
 	        	preg_replace(
 		        	"/\[\[(.+?)\]\]/", 
-		        	"<a class='tec' href='projects.php?l=".$c_idiom."#$1'>$1</a>", 
+		        	"<a class='tec' href='projects.php?l=".$translation->getLanguage()."#$1'>$1</a>", 
 		        	$translation->{'getTranslation'}("INTRODUCTION_MYWORK")
 				);
 			?>

@@ -3,14 +3,15 @@
 
 	 };
 	 
-	 Project.prototype.loadProjects = function(tag, language, callback) {
+	 Project.prototype.loadProjects = function (tag, language, callback) {
 		jQuery.ajax({
 		    type: "GET",
 		    url: 'service/amayaweb_service.php',
 		    data: {functionname: "getProjects", language:language, tag:tag},
 		    dataType: "json",
 		    success: function (obj, textstatus) {
-	          if( !(obj.error) ) {	          	
+		        if (!(obj.error)) {
+		            console.log(obj.result);
 	          	callback(obj.result);
 	          }
 	          else {
