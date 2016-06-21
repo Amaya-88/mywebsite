@@ -4,15 +4,10 @@
 <?php 
 	function addHeader($name, $dfn,$url) 
 	{
-		
-		$current_language = "en";
-		if(isset($_POST['l']))
-			$current_language = $_POST['l'];
-
 	   $header_class =  curPageName()==$url?'class="menuFirst"':'';
 	
 	   echo '<li id="'.$name.'_li" '.$header_class.'>
-	   			<a href="'.$url.'.php?l='.$current_language.'">
+	   			<a href="'.$url.'.php">
 	   				<dfn>'.$dfn.' </dfn>'
 	   				.$name.
 	   			'</a>
@@ -21,7 +16,7 @@
 ?> 
 
 <?php
-	echo '<div id="header">
+	echo '<div id="header" data-lang="<? echo $_SERVER[\'HTTP_ACCEPT_LANGUAGE\']) ?>">
 			<div class="menu clearfix">
 	      	<a href="#" class="pull">Menu</a>  
 	        <ul class="clearfix">';

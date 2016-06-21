@@ -92,9 +92,11 @@
     <Compile Include="styles\stylesheets\print.css" />
     <Compile Include="styles\stylesheets\screen.css" />
     <Compile Include="styles\config.rb" />
+    <Compile Include="test.php" />
     <Compile Include="ui\components\footer.php" />
     <Compile Include="ui\components\header.php" />
     <Compile Include="util\csvtodict.php" />
+    <Compile Include="util\enviroment.php" />
     <Compile Include="util\translation.php" />
     <Compile Include="util\urltools.php" />
     <Compile Include="blog.php" />

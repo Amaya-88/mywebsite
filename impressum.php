@@ -1,10 +1,6 @@
 <?php include "util/urltools.php"; ?>
 	<?php include "util/translation.php"; 
-		$c_idiom = "en";
-		if(isset( $_GET['l']))
-			$c_idiom= $_GET['l'];
-
-		$translation = new Translation($c_idiom,"data/translationamayaweb.csv");
+		$translation = new Translation();
 	?>
 <!DOCTYPE html>
 <html>
